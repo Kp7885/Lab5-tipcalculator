@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tip Calculator</h1>
+    <p>Currency conversion:</p>
+    <p>$1 USD = €0.95 EUR for EUROS</p>
+    <p>$1 USD = ₹85 INR for Rupees</p>
+
+    <label for="billTotal">Bill Total: $</label>
+    <input type="text" id="billTotal" placeholder="Enter bill amount">
+    <p id="errorMessage" class="error-message"></p>
+    <br>
+    <label for="billWithTax">Total Bill with Tax (11%):</label>
+    <input type="text" id="billWithTax" disabled>
+    <br>
+    <label for="currency">Select Currency:</label>
+    <select id="currency">
+      <option value="USD">$ US Dollars</option>
+      <option value="EUR">€ Euros</option>
+      <option value="INR">₹ Rupees</option>
+    </select>
+    <br>
+    <label for="tipRange">Tip:</label>
+    <input type="range" id="tipRange" min="0" max="100" value="0">
+    <span id="tipPercent">0</span>%
+    <br>
+    <label for="convertedTip">Converted Tip Amount:</label>
+    <input type="text" id="convertedTip" disabled>
+    <br>
+    <label for="convertedTotal">Converted Total Bill with Tip and Tax:</label>
+    <input type="text" id="convertedTotal" disabled>
+  </div>
+
+  <script src="Lab5.js"></script>
+</body>
+</html>
